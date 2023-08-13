@@ -1,4 +1,6 @@
 
+using ECom.ShoppingCart.Integration.MessagingBus;
+
 namespace ECom.ShoppingCart.Api
 {
     public class Program
@@ -13,6 +15,7 @@ namespace ECom.ShoppingCart.Api
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
+            builder.Services.AddSingleton<IMessageBus,AzureServiceBusMessageBus>();
 
             var app = builder.Build();
 

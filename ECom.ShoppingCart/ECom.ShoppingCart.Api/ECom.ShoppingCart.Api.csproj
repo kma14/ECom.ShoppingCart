@@ -14,4 +14,9 @@
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\ECom.ShoppingCart.Integration.Messages\ECom.ShoppingCart.Integration.Messages.csproj" />
+    <ProjectReference Include="..\ECom.ShoppingCart.Integration.MessagingBus\ECom.ShoppingCart.Integration.MessagingBus.csproj" />
+  </ItemGroup>
+
 </Project>
